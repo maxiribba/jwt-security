@@ -30,7 +30,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 	private UserDetailsService userDetailsService;
 	
 	
-	// TODO: revisar este bean
+	// TODO: se puede usar un mejor algoritmo de encoding
 	@Bean
 	public BCryptPasswordEncoder bCryptPasswordEncoder() {
 		return new BCryptPasswordEncoder();
